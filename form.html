@@ -1,15 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title> Rinoa Sadey's personal website </title>
+		<title> rinoa's personal website </title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<style>
-			body {font-family: Arial, Helvetica, sans-serif;}
-		</style>
+	</head>
 	<body>
-	<header>
-		<h1> Rinoa Sadey </h1>
-		<p> Contact me. </p>
-	</header>
+		<header id="top">
+        	<h1>let's talk!</h1>
+        	<p>interested in research collaboration, chess conversations, or just saying hi? </p>
+    	</header>
+
+    <nav aria-label="Page navigation">
+        <a href="index.html">Home</a> |
+        <a href="index.html#about">About</a> |
+        <a href="index.html#highlights">Highlights</a> |
+        <a href="experience.html">Experience &amp; Education</a> |
+        <a href="form.html">Contact</a>
+    </nav>
+
+    <main>
+        <section id="contact-form">
+            <h2>Contact Form</h2>
+            <p>This form is only for collecting the inputs for now. It does not send or store data yet.</p>
+
+            <form action="#" method="get">
+                <p>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name">
+                </p>
+
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email">
+                </p>
+
+                <p>
+                    <label for="reason">What brings you here?</label><br>
+                    <select id="reason" name="reason">
+                        <option value="research">Research collaboration</option>
+                        <option value="academic">Academic conversation</option>
+                        <option value="chess">Chess</option>
+                        <option value="other">Something else</option>
+                    </select>
+                </p>
+
+                <p>
+                    Preferred way to connect:<br>
+                    <input type="radio" id="email-choice" name="contact-method" value="email">
+                    <label for="email-choice">Email</label>
+                    <input type="radio" id="linkedin-choice" name="contact-method" value="linkedin">
+                    <label for="linkedin-choice">LinkedIn</label>
+                </p>
+
+                <p>
+                    What would you like to discuss?<br>
+                    <input type="checkbox" id="math" name="topic" value="mathematics">
+                    <label for="math">Mathematics</label><br>
+                    <input type="checkbox" id="cs" name="topic" value="computer-science">
+                    <label for="cs">Computer science</label><br>
+                    <input type="checkbox" id="research" name="topic" value="research">
+                    <label for="research">Research</label><br>
+                    <input type="checkbox" id="other-topic" name="topic" value="other">
+                    <label for="other-topic">Other</label>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="7" cols="50">Hi Rinoa!</textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Send Message">
+                    <input type="reset" value="Reset">
+                </p>
+            </form>
+        </section>
+
+        <section id="other-contact">
+            <h2>Prefer a Direct Link?</h2>
+            <p>
+                You can also email me at
+                <a href="mailto:rinoamarielsadey@gmail.com">rinoamarielsadey@gmail.com</a>
+                or find me on
+                <a href="https://www.linkedin.com/in/rinoa-mariel-sadey" target="_blank" title="Rinoa Sadey on LinkedIn">LinkedIn</a>.
+            </p>
+        </section>
+
+        <p><a href="#top">Back to Top</a></p>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Back to the home page</a> &hearts;</p>
+    </footer>
 </html>
